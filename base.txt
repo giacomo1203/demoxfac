@@ -1,0 +1,14 @@
+-- Base de datos: `xfactura`
+
+CREATE TABLE `usuario` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `ruc` varchar(15) NOT NULL,
+  `razsoc` varchar(100) NOT NULL,
+  `ema` varchar(50) NOT NULL,
+  `usu` varchar(50) NOT NULL,
+  `cla` varchar(50) NOT NULL,
+  `fec` bigint(20) NOT NULL,
+  `est` char(1) NOT NULL,
+  `recordar` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
