@@ -1,4 +1,16 @@
 <?php
+
+	$link = mysqli_connect("ec2-52-205-175-163.compute-1.amazonaws.com", "root", "Nami_2017", "xfactura");
+
+	/* check connection */
+	if (mysqli_connect_errno()) {
+	    printf("Connect failed: %s\n", mysqli_connect_error());
+	    exit();
+	}else{
+		echo "damm";
+	}
+
+
 	class BD{
 		var $cn;
 		function BD($servidor="ec2-52-205-175-163.compute-1.amazonaws.com", $usuario="root", $clave="Nami_2017", $base="xfactura"){
