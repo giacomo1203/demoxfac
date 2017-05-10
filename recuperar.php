@@ -5,7 +5,7 @@
 	$o_bd = new BD();
 	
 	$ema = $_REQUEST['txema'];
-	$res = $o_bd->consulta("select ruc, razsoc, ema, usu, cla from usuario where ema='$ema' and est='1'");
+	$res = $o_bd->consulta("select ruc, razsoc, ema, usu, cla from empresa where ema='$ema' and est='1'");
 	$num = $o_bd->num_rows($res);
 	if($num==1){
 		$ruc    = $o_bd->result($res, 0, 0);

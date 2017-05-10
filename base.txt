@@ -1,6 +1,7 @@
--- Base de datos: `xfactura`
+-- Base de datos: `jose_xfactura`
 
-CREATE TABLE `usuario` (
+
+CREATE TABLE `empresa` (
   `id` bigint(20) NOT NULL auto_increment,
   `ruc` varchar(15) NOT NULL,
   `razsoc` varchar(100) NOT NULL,
@@ -9,6 +10,69 @@ CREATE TABLE `usuario` (
   `cla` varchar(50) NOT NULL,
   `fec` bigint(20) NOT NULL,
   `est` char(1) NOT NULL,
+  `log` varchar(50) NOT NULL COMMENT 'logo',
+  `cer` varchar(50) NOT NULL COMMENT 'certificado',
+  `clacer` varchar(50) NOT NULL COMMENT 'clave certificado',
+  `ususol` varchar(50) NOT NULL COMMENT 'usuario sol',
+  `clasol` varchar(50) NOT NULL COMMENT 'clave sol',
   `recordar` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+-- 
+-- Volcar la base de datos para la tabla `empresa`
+-- 
+
+INSERT INTO `empresa` VALUES (1, '12121212121', 'GLOBALTECH SAC', 'globaltech@gmail.com', 'globalte', '123', 20170430, '1', '', '', 'globaltech123', 'GLOBALTE', '1234qwer', '1410994');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `venta`
+-- 
+
+CREATE TABLE `venta` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `emp_id` bigint(20) NOT NULL COMMENT 'empresa',
+  `fecemi` bigint(20) NOT NULL COMMENT 'fecha emision',
+  `tipdoc` varchar(10) NOT NULL COMMENT 'tipo documento',
+  `ser` varchar(10) NOT NULL COMMENT 'serie',
+  `nro` varchar(10) NOT NULL COMMENT 'numero',
+  `mnd` varchar(10) NOT NULL COMMENT 'moneda',
+  `cliruc` varchar(20) NOT NULL COMMENT 'ruc cliente',
+  `clirazsoc` varchar(100) NOT NULL COMMENT 'razon social cliente',
+  `clidir` varchar(100) NOT NULL COMMENT 'direccion cliente',
+  `subtot` varchar(20) NOT NULL COMMENT 'subtotal',
+  `dscto` varchar(20) NOT NULL COMMENT 'descuento',
+  `tot` varchar(20) NOT NULL COMMENT 'total',
+  `obs` text NOT NULL COMMENT 'observacion',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Volcar la base de datos para la tabla `venta`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `venta_det`
+-- 
+
+CREATE TABLE `venta_det` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `ven_id` bigint(20) NOT NULL COMMENT 'venta',
+  `cod` varchar(10) NOT NULL COMMENT 'codigo producto',
+  `can` varchar(10) NOT NULL COMMENT 'cantidad producto',
+  `pre` varchar(20) NOT NULL COMMENT 'precio producto',
+  `des` varchar(200) NOT NULL COMMENT 'descripcion producto',
+  `tot` varchar(20) NOT NULL COMMENT 'total',
+  `obs` text NOT NULL COMMENT 'observacion',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Volcar la base de datos para la tabla `venta_det`
+-- 
+

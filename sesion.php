@@ -5,6 +5,6 @@
 	}
 	
 	$c_id     = $_SESSION["s_id"];
-	$c_nomape = $_SESSION["s_nomape"];
-	$c_img    = $_SESSION["s_img"];
+	$c_ruc    = $_SESSION["s_ruc"];
+	$c_razsoc = $_SESSION["s_razsoc"];
 ?>

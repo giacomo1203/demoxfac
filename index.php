@@ -8,7 +8,7 @@
 	$rec = "";
 	if(isset($_COOKIE['recid'])){
 		if($_COOKIE['recid']!=""){
-			$res = $o_bd->consulta("select ruc, usu, cla from usuario where id='".$_COOKIE["recid"]."' and recordar='".$_COOKIE["recordar"]."' and recordar<>''");
+			$res = $o_bd->consulta("select ruc, usu, cla from empresa where id='".$_COOKIE["recid"]."' and recordar='".$_COOKIE["recordar"]."' and recordar<>''");
 			$num = $o_bd->num_rows($res);
 			if($num>0){
 				$ruc = $o_bd->result($res, 0, 0);

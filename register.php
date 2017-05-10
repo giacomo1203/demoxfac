@@ -20,7 +20,7 @@
 				<div class="col-sm-6 form-message">
 					<img src="assets/img/logo-2x.png" alt="logo" width="169" height="28" class="logo-img mb-4">
 					<span class="splash-description text-center mt-4 mb-4">Regístrate</span>
-					<form class="sign-up-form" method="post" action="control/usuario.php?modo=add" name="frm">
+					<form class="sign-up-form" method="post" action="control/empresa.php?modo=add" name="frm">
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="icon s7-cash"></i></span>
@@ -150,7 +150,7 @@
 		$.ajax({
 			type: "POST",
 			data: "ruc="+ruc+"&ema="+ema+"&usu="+usu+"&modo=exi",
-			url: "control/usuario.php",
+			url: "control/empresa.php",
 			success: function(respuesta){
 				if(respuesta!=""){
 					alert(respuesta);
