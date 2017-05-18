@@ -205,6 +205,34 @@
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.print.js" type="text/javascript"></script>
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.colVis.js" type="text/javascript"></script>
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.bootstrap.js" type="text/javascript"></script>
+
+    <script src="assets/lib/jquery.niftymodals/dist/jquery.niftymodals.js" type="text/javascript"></script>
+    <script src="assets/lib/morrisjs/morris.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        
+        function showGraph() {
+            var l1='#4db8ea',
+            l2='#57s2f4';
+            new Morris.Line( {
+              element: "line-chart", data: e, xkey: "meses",
+              ykeys: ["factura", "boleta"], labels: ["Factura", "Boleta"], lineColors: [l1, l2]
+            }
+            )
+        }
+  
+        var e=[   { meses: "enero", factura: 400, boleta: 550 },
+                  { meses: "febrero", factura: 450, boleta: 400 },
+                  { meses: "marzo", factura: 350, boleta: 550 },
+                  { meses: "abril", factura: 500, boleta: 700 },
+                  { meses: "mayo", factura: 250, boleta: 380 },
+                  { meses: "junio", factura: 350, boleta: 240 }
+        ];
+
+        showGraph();
+
+    </script>
+
     <script type="text/javascript">
     $(document).ready(function(){
 		/*initialize the javascript*/

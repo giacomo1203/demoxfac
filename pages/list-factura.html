@@ -1,140 +1,73 @@
-<div class="row">
-          <!--Responsive table-->
-          <div class="col-sm-12">
-            <div class="panel panel-default panel-table">
-              <div class="panel-heading">Facturas
-                <div class="tools"><span class="icon s7-cloud-download"></span><span class="icon s7-edit"></span></div>
+  <div class="row">
+    <!--Responsive table-->
+    <div class="col-sm-12">
+      <div class="panel panel-default panel-table">
+        <div class="panel-heading">
+          Facturas
+          <div class="tools">
+            <div class="btn-group btn-hspace">
+              <button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" style=" padding: 7px 12px;" type="button"><i class="icon icon-left s7-cloud" style="margin-right: 1rem; color: grey;"></i>Descargar<span class="icon-dropdown s7-angle-down"></span></button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">Descargar PDF</a><a class="dropdown-item" href="#">Descargar XML</a><a class="dropdown-item" href="#">Descargar YAML</a> <a class="dropdown-item" href="#">Descargar CDR</a>
               </div>
-              <div class="panel-body">
-                <div class="table-responsive noSwipe">
-                  <table class="table table-striped table-hover">
-                    <thead>
-                      <tr>
-                        <th style="width:5%;">
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </th>
-                        <th style="width:20%;">Estado</th>
-                        <th style="width:17%;">RUC</th>
-                        <th style="width:15%;">Razón Social</th>
-                        <th style="width:10%;">Serie Correlativo</th>
-                        <th style="width:10%;">Ficha de Emisión</th>
-                        <th style="width:10%;">Monto</th>
-
-                        <th style="width:10%;">Info</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </td>
-                          <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
-                          <div class="progress">
-                            <div style="width: 45%" class="progress-bar progress-bar-primary"></div>
-                          </div>
-                        </td>
-                        <td class="cell-detail"> <span>20101259014</span><span class="cell-detail-description">Bootstrap Admin</span></td>
-                      
-                          <td class="user-avatar cell-detail user-info"><img src="assets/img/avatar.jpg" alt="Avatar"><span>FUNDACION PARA EL DESARROLLO AGRARIO</span><span class="cell-detail-description"></span></td>
-                        <td class="cell-detail"><span>F355-00000007</span><span class="cell-detail-description">63e8ec3</span></td>
-                        <td class="cell-detail"><span>08-03-2017</span><span class="cell-detail-description">8:30</span></td>
-                          <td class="center">S/233.0</td>
-                        <td>
-                         <button id="not-info" class="btn btn-rounded btn-space btn-info">Info</button>
-                        </td>
-                      </tr>
-                      <tr class="online">
-                        <td>
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </td>
-                          <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
-                          <div class="progress">
-                            <div style="width: 45%" class="progress-bar progress-bar-primary"></div>
-                          </div>
-                        </td>
-                        <td class="cell-detail"> <span>Initial commit</span><span class="cell-detail-description">Bootstrap Admin</span></td>
-                      
-                          <td class="user-avatar cell-detail user-info"><img src="assets/img/avatar.jpg" alt="Avatar"><span>John Peterson</span><span class="cell-detail-description">Developer</span></td>
-                        <td class="cell-detail"><span>master</span><span class="cell-detail-description">63e8ec3</span></td>
-                        <td class="cell-detail"><span>May 6, 2016</span><span class="cell-detail-description">8:30</span></td>
-                          <td class="center">S/233.0</td>
-                        <td>
-                         <button id="not-info" class="btn btn-rounded btn-space btn-info">Info</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </td>
-                          <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
-                          <div class="progress">
-                            <div style="width: 45%" class="progress-bar progress-bar-primary"></div>
-                          </div>
-                        </td>
-                        <td class="cell-detail"> <span>20101259014</span><span class="cell-detail-description">Bootstrap Admin</span></td>
-                      
-                          <td class="user-avatar cell-detail user-info"><img src="assets/img/avatar.jpg" alt="Avatar"><span>FUNDACION PARA EL DESARROLLO AGRARIO</span><span class="cell-detail-description"></span></td>
-                        <td class="cell-detail"><span>F355-00000007</span><span class="cell-detail-description">63e8ec3</span></td>
-                        <td class="cell-detail"><span>08-03-2017</span><span class="cell-detail-description">8:30</span></td>
-                          <td class="center">S/233.0</td>
-                        <td>
-                         <button id="not-info" class="btn btn-rounded btn-space btn-info">Info</button>
-                        </td>
-                      </tr>
-                       <tr>
-                        <td>
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </td>
-                          <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
-                          <div class="progress">
-                            <div style="width: 45%" class="progress-bar progress-bar-primary"></div>
-                          </div>
-                        </td>
-                        <td class="cell-detail"> <span>20101259014</span><span class="cell-detail-description">Bootstrap Admin</span></td>
-                      
-                          <td class="user-avatar cell-detail user-info"><img src="assets/img/avatar.jpg" alt="Avatar"><span>FUNDACION PARA EL DESARROLLO AGRARIO</span><span class="cell-detail-description"></span></td>
-                        <td class="cell-detail"><span>F355-00000007</span><span class="cell-detail-description">63e8ec3</span></td>
-                        <td class="cell-detail"><span>08-03-2017</span><span class="cell-detail-description">8:30</span></td>
-                          <td class="center">S/233.0</td>
-                        <td>
-                         <button id="not-info" class="btn btn-rounded btn-space btn-info">Info</button>
-                        </td>
-                      </tr>
-                       <tr>
-                        <td>
-                          <label class="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span>
-                          </label>
-                        </td>
-                          <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
-                          <div class="progress">
-                            <div style="width: 45%" class="progress-bar progress-bar-primary"></div>
-                          </div>
-                        </td>
-                        <td class="cell-detail"> <span>20101259014</span><span class="cell-detail-description">Bootstrap Admin</span></td>
-                      
-                          <td class="user-avatar cell-detail user-info"><img src="assets/img/avatar.jpg" alt="Avatar"><span>FUNDACION PARA EL DESARROLLO AGRARIO</span><span class="cell-detail-description"></span></td>
-                        <td class="cell-detail"><span>F355-00000007</span><span class="cell-detail-description">63e8ec3</span></td>
-                        <td class="cell-detail"><span>08-03-2017</span><span class="cell-detail-description">8:30</span></td>
-                          <td class="center">S/233.0</td>
-                        <td>
-                         <button id="not-info" class="btn btn-rounded btn-space btn-info">Info</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+            </div><button class="btn btn-space btn-secondary" style=" margin: 0px; padding: 13px 12px;">Descargar todos</button>
           </div>
         </div>
+        <div class="panel-body">
+          <div class="table-responsive noSwipe">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th style="width:5%;"><label class="custom-control custom-control-sm custom-checkbox"><input class="custom-control-input" type="checkbox"><span class="custom-control-indicator"></span></label></th>
+                  <th style="width:4%;">Estado</th>
+                  <th style="width:10%;">RUC</th>
+                  <th style="width:35%;">Razón Social</th>
+                  <th style="width:12%;">Serie Correlativo</th>
+                  <th style="width:10%;">Ficha de Emisión</th>
+                  <th style="width:10%;">Monto</th>
+                  <th style="width:8%;">Info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><label class="custom-control custom-control-sm custom-checkbox"><input class="custom-control-input" type="checkbox"><span class="custom-control-indicator"></span></label></td>
+                  <td class="action"><i class="s7-attention" style="font-size: 30px;"></i></td>
+                  <td class="cell-detail"><span>20101259014</span></td>
+                  <td class="user-avatar cell-detail user-info"><img alt="Avatar" src="assets/img/avatar.jpg"><span>FUNDACION PARA EL DESARROLLO AGRARIO</span><span class="cell-detail-description"></span></td>
+                  <td class="cell-detail"><span>F355-00000007</span></td>
+                  <td class="cell-detail"><span>08-03-2017</span> <span class="cell-detail-description">8:30</span></td>
+                  <td class="center">
+                    <span class="badge badge-primary" style="border-radius: 20px;">S/. 123.00</span>
+                  </td>
+                  <td><button data-modal="colored-info" class="btn btn-rounded btn-space btn-info" id="not-info">Info</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- MODALES INFO -->
+
+<div id="colored-primary" class="modal-container modal-effect-1" style="perspective: 1300px;">
+  <div class="modal-content">
+    <div class="modal-header modal-header-colored modal-header-colored-primary">
+      <h4 class="modal-title">Custom Colored Header</h4>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="s7-close"></span></button>
+    </div>
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices euismod lobortis. Donec fermentum mattis velit id pretium. Suspendisse sed tortor sed diam lobortis tempus at sed lacus.</p>
+      <p>Fusce sit amet lacus arcu. Pellentesque iaculis massa vitae ullamcorper venenatis. Cras metus dolor, maximus sit amet est nec, pharetra blandit elit sagittis vehicula. Dolor sit amet.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-link btn-link-secondary modal-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-link btn-link-primary modal-close">Proceed    </button>
+    </div>
+  </div>
+</div>
+
+
+
