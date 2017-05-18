@@ -29,14 +29,14 @@
 						<label class="col-3 col-form-label text-right">Logo empresarial</label>
 						<div class="col-6">
 							<input type="file" name="txlog" id="txlog" data-multiple-caption="{count} files selected" class="inputfile">
-							<label for="file-1" class="btn btn-secondary"> <i class="icon s7-upload"></i><span>Seleccionar Archivo...</span></label>
+							<label for="txlog" class="btn btn-secondary"> <i class="icon s7-upload"></i><span>Seleccionar Archivo...</span></label>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="col-3 col-form-label text-right">Subir certificado</label>
 						<div class="col-6">
 							<input type="file" name="txcer" id="txcer" data-multiple-caption="{count} files selected" class="inputfile">
-							<label for="file-1" class="btn btn-secondary"> <i class="icon s7-upload"></i><span>Seleccionar Archivo...</span></label>
+							<label for="txcer" class="btn btn-secondary"> <i class="icon s7-upload"></i><span>Seleccionar Archivo...</span></label>
 						</div>
 					</div>
 					<div class="form-group row">
