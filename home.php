@@ -156,12 +156,12 @@
 								</ul>
 							</li>
 							<li class="nav-item parent">
-								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-diamond"></span><span>Ventas</span></a>
+								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-cash"></span><span>Ventas</span></a>
 								<ul class="mai-nav-tabs-sub mai-sub-nav nav">
 									<li class="nav-item"><a href="javascript:setPage('factura');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Facturas</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('listado');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Boletas</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('listado');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Notas de Credito</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('listado');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Notas de Debito</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('boleta');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Boletas</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('credito');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Notas de Credito</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('debito');" class="nav-link"><span class="icon s7-cash"></span><span class="name">Notas de Debito</span></a></li>
 								</ul>
 							</li>
 							<li class="nav-item parent">
@@ -265,8 +265,15 @@
         if(page=='factura'){
           $(".main-content").load('pages/list-factura.html');
         }
-        if(page=='listado'){
-          $(".main-content").load('pages/listado.html');
+       
+		if(page=='boleta'){
+          $(".main-content").load('pages/list-boletas.html');
+        }
+		if(page=='credito'){
+          $(".main-content").load('pages/list-notacredito.html');
+        }
+		if(page=='debito'){
+          $(".main-content").load('pages/list-notadebito.html');
         }
         if(page=='usuario'){
           $(".main-content").load('pages/usuario.html');
