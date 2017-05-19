@@ -2,11 +2,11 @@
 	<div class="col-md-12 invoice-content">
 	
 	<form method="post" action="control/factura.php?modo=add" name="frm">
-		<input type="" id="dcan" name="dcan">
-		<input type="" id="dcod" name="dcod">
-		<input type="" id="ddes" name="ddes">
-		<input type="" id="dpre" name="dpre">
-		<input type="" id="dtot" name="dtot">
+		<input type="hidden" id="dcan" name="dcan">
+		<input type="hidden" id="dcod" name="dcod">
+		<input type="hidden" id="ddes" name="ddes">
+		<input type="hidden" id="dpre" name="dpre">
+		<input type="hidden" id="dtot" name="dtot">
 		
 		<input type="hidden" id="csubtot" name="csubtot">
 		<input type="hidden" id="cdscto" name="cdscto">

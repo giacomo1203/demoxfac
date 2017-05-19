@@ -18,6 +18,22 @@
 			}
 		}
 	}
+/*
+	$a_emi = array("numero-documento"=>"20548627762", "tipo-documento"=>"6", "razon-social"=>"3waf trade s.a.c", "nombre-comercial"=>"3waf trade s.a.c", "ubigeo"=>"150115", "pais"=>"PE", "departamento"=>"LIMA", "provincia"=>"LIMA", "distrito"=>"LA VICTORIA", "direccion"=>"AV. NICOLAS ARRIOLA 740 URB. SANTA CATALINA");	
+	$a_cli = array("numero-documento"=>"20137254205", "tipo-documento"=>"6", "razon-social"=>"INSTITUTO PERUANO DE ACCION EMPRESARIAL IPAE", "pais"=>"PE", "distrito"=>"LIMA - SAN ISIDRO", "direccion"=>"AV. PASEO DE LA REPUBLICA N 4675");
+	
+	for($i=1; $i<=5; $i++){
+		$a_i01 = array("id"=>"VAT", "sunat-id"=>"1000", "nombre"=>"IGV", "total-impuesto"=>60.17, "base-imponible"=>316, "afectacion-igv"=>"10", "porcentaje"=>"19");
+		$a_ite[] = array("id"=>"01", "codigo-producto"=>"630067", "cantidad"=>7, "tipo-precio"=>"01", "precio-venta"=>53.8356, "total-item"=>316, "descripcion"=>"P164166U HYD CART@@@@@@UN@@7@@376.85@@UN", "precio-unitario"=>45.2400, "unidad-medida"=>"NIU", "total-impuestos"=>60.17, "impuestos"=>array($a_i01));
+	}
+	$a_com = array("tipo-comprobante"=>"01", "serie-correlativo"=>"F001-0000001", "fecha-emision"=>"2017-04-22", "tipo-moneda"=>"USD", "emisor"=>$a_emi, "cliente"=>$a_cli, "items"=>$a_ite);
+	
+	$a_json = array("Comprobante"=>$a_com);
+	
+	$json = json_encode($a_json);
+	$archivo = "empresa/12121212121/F001-0000001.json";
+	file_put_contents($archivo, $json);
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,8 +55,7 @@
 		<div class="main-content container">
 			<div class="splash-container row">
 				<div class="col-sm-6 user-message oli">
-					  
-					<span class="splash-message text-right">Es una aplicación desarrollada para la emisión y recepción de documentos,<br>que cumple con todos los requisitos planteados por la SUNAT</span>
+					<span class="splash-message text-right">¡Hola!<br>de vuelta<br> en Xfactura</span>
 					<span class="alternative-message text-right">No tienes cuenta? <a href="register.php">Regístrate Aquí</a></span>
 				</div>
 				<div class="col-sm-6 form-message">

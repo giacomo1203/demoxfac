@@ -33,7 +33,7 @@
 				$o_bd->proceso("insert into venta_det(ven_id, cod, can, pre, des, tot, obs) values($id, '".$acod[$i]."', '".$acan[$i]."', '".$apre[$i]."', '".$ades[$i]."', '".$atot[$i]."', '')");
 			}
 		}
-		echo "GRABO TODO CORRECTAMENTE";
-		//header("location:../home.php");
+		//echo "GRABO TODO CORRECTAMENTE";
+		header("location:../home.php");
 	}
 ?>

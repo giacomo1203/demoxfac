@@ -1,7 +1,8 @@
 <?php
 	class BD{
 		var $cn;
-		//function BD($servidor="localhost", $usuario="root", $clave="123", $base="jose_xfactura"){
+		//function BD($servidor="localhost", $usuario="root", $clave="123", $base="xfactura"){
+
 		function BD($servidor="ec2-52-205-175-163.compute-1.amazonaws.com", $usuario="root", $clave="Nami_2017", $base="xfactura"){
 			$this->cn = mysqli_connect($servidor, $usuario, $clave);
 			mysqli_select_db($this->cn, $base);

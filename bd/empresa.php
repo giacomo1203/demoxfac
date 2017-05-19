@@ -14,8 +14,8 @@
 		var $ususol;
 		var $clasol;
 		var $recordar;
-		function grabar($ruc, $razsoc, $ema, $usu, $cla, $fec, $est){
-			$this->proceso("insert into empresa(ruc, razsoc, ema, usu, cla, fec, est) values('$ruc', '$razsoc', '$ema', '$usu', '$cla', $fec, '$est')");
+		function grabar($ruc, $razsoc, $ema, $usu, $cla, $fec, $est, $log, $cer, $clacer, $ususol, $clasol, $recordar){
+			$this->proceso("insert into empresa(ruc, razsoc, ema, usu, cla, fec, est, log, cer, clacer, ususol, clasol, recordar) values('$ruc', '$razsoc', '$ema', '$usu', '$cla', $fec, '$est', '', '', '', '', '', '')");
 			return mysqli_insert_id($this->cn);
 		}
 
