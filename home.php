@@ -149,10 +149,10 @@
 								</ul>
 							</li>
 							<li class="nav-item parent">
-								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-rocket"></span><span>Subir Facturas</span></a>
+								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-rocket"></span><span>Emitir</span></a>
 								<ul class="mai-nav-tabs-sub mai-sub-nav nav">
 									<li class="nav-item"><a href="javascript:setPage('create');" class="nav-link"><span class="name">Unidad</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('masive');" class="nav-link"><span class="name">Paquete</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('masive');" class="nav-link"><span class="name">Masivo</span></a></li>
 								</ul>
 							</li>
 							<li class="nav-item parent">
