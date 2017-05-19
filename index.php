@@ -55,7 +55,7 @@
 		<div class="main-content container">
 			<div class="splash-container row">
 				<div class="col-sm-6 user-message oli">
-					<span class="splash-message text-right">¡Hola!<br>de vuelta<br> en Xfactura</span>
+					<span class="splash-message text-right">Es una aplicación desarrollada para la emisión y recepción de documentos,<br>que cumple con todos los requisitos planteados por la SUNAT</span>
 					<span class="alternative-message text-right">No tienes cuenta? <a href="register.php">Regístrate Aquí</a></span>
 				</div>
 				<div class="col-sm-6 form-message">
