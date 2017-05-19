@@ -165,6 +165,15 @@
 								</ul>
 							</li>
 							<li class="nav-item parent">
+								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-box1"></span><span>Recepción</span></a>
+								<ul class="mai-nav-tabs-sub mai-sub-nav nav">
+									<li class="nav-item"><a href="javascript:setPage('efactura');" class="nav-link"><span class="icon s7-box1"></span><span class="name">Facturas</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('eboleta');" class="nav-link"><span class="icon s7-box1"></span><span class="name">Boletas</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('ecredito');" class="nav-link"><span class="icon s7-box1"></span><span class="name">Notas de Credito</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('edebito');" class="nav-link"><span class="icon s7-box1"></span><span class="name">Notas de Debito</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item parent">
 								<a href="#" role="button" aria-expanded="false" class="nav-link"><span class="icon s7-settings"></span><span>Configuración</span></a>
 								<ul class="mai-nav-tabs-sub mai-sub-nav nav">
 									<li class="nav-item"><a href="javascript:setPage('usuario');" class="nav-link"><span class="icon s7-mail"></span><span class="name">Usuario</span></a></li>
@@ -274,6 +283,19 @@
         }
 		if(page=='debito'){
           $(".main-content").load('pages/list-notadebito.html');
+        }
+		if(page=='efactura'){
+          $(".main-content").load('pages/list-efactura.html');
+        }
+       
+		if(page=='eboleta'){
+          $(".main-content").load('pages/list-eboletas.html');
+        }
+		if(page=='ecredito'){
+          $(".main-content").load('pages/list-enotacredito.html');
+        }
+		if(page=='edebito'){
+          $(".main-content").load('pages/list-enotadebito.html');
         }
         if(page=='usuario'){
           $(".main-content").load('pages/usuario.html');
