@@ -60,3 +60,42 @@
       </div>
     </div>
   </div>
+
+
+<div id="colored-info" class="modal-container modal-effect-1 modal-show">
+  <div class="modal-content">
+    <div class="modal-header modal-header-colored modal-header-colored-info">
+      <h4 class="modal-title">Detalle de estado de comprobante</h4>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="s7-close"></span></button>
+    </div>
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices euismod lobortis. Donec fermentum mattis velit id pretium. Suspendisse sed tortor sed diam lobortis tempus at sed lacus.</p>
+      <p>Fusce sit amet lacus arcu. Pellentesque iaculis massa vitae ullamcorper venenatis. Cras metus dolor, maximus sit amet est nec, pharetra blandit elit sagittis vehicula. Dolor sit amet.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-link btn-link-secondary modal-close">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript">
+
+      //Set Nifty Modals defaults
+      $.fn.niftyModal('setDefaults',{
+        overlaySelector: '.modal-overlay',
+        contentSelector: '.modal-content',
+        closeSelector: '.modal-close',
+        classAddAfterOpen: 'modal-show',
+        classModalOpen: 'modal-open',
+        classScrollbarMeasure: 'modal-scrollbar-measure',
+        afterOpen: function(){
+         $("html").addClass('mai-modal-open');
+        },
+        afterClose: function(){
+          $("html").removeClass('mai-modal-open');
+        }
+      });
+
+    
+  </script>

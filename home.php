@@ -181,9 +181,11 @@
 									<li class="nav-item"><a href="javascript:setPage('usuario');" class="nav-link"><span class="icon s7-mail"></span><span class="name">Usuario</span></a></li>
 									<li class="nav-item"><a href="javascript:setPage('empresa');" class="nav-link"><span class="icon s7-mail"></span><span class="name">Empresa</span></a></li>
 									<li class="nav-item"><a href="javascript:setPage('lusuario');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Listado de Usuarios</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('horarios');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Horarios</span></a></li>
+									
+                                    <!-- <li class="nav-item"><a href="javascript:setPage('horarios');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Horarios</span></a></li>
 									<li class="nav-item"><a href="javascript:setPage('servicios');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Servicios de Sunat</span></a></li>
-									<li class="nav-item"><a href="javascript:setPage('correos');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Correos de Notificaciones</span></a></li>
+									<li class="nav-item"><a href="javascript:setPage('correos');" class="nav-link"><span class="icon s7-wallet"></span><span class="name">Correos de Notificaciones</span></a></li> -->
+
 								</ul>
 							</li>
 						</ul>
@@ -219,6 +221,8 @@
 
     <script src="assets/lib/raphael/raphael-min.js" type="text/javascript"></script>
     <script src="assets/lib/morrisjs/morris.min.js" type="text/javascript"></script>
+
+    <script src="assets/lib/jquery.niftymodals/dist/jquery.niftymodals.js" type="text/javascript"></script>
 
     <script type="text/javascript">
     $(document).ready(function(){
