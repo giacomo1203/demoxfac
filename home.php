@@ -248,6 +248,8 @@
         loadChart();
         //------------------> End chart
 
+        App.init();
+
 	})
 	var setPage = function(stage){
 		console.log(stage);
