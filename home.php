@@ -4,18 +4,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="shortcut icon" href="assets/img/favicon.html">
-<title>X-factura</title>
-<link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
-<link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>  
-<link type="text/css" href="assets/css/app.css" rel="stylesheet">
-<link type="text/css" href="assets/css/themes/blue-sky.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/lib/dropzone/dist/dropzone.css"/>
-<link rel="stylesheet" type="text/css" href="assets/lib/datatables/css/dataTables.bootstrap4.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.html">
+    <title>X-factura</title>
+    <link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>  
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/blue-sky.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/lib/dropzone/dist/dropzone.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/datatables/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/morrisjs/morris.css">
+
 </head>
 <body>
 	<nav class="navbar navbar-full navbar-inverse navbar-fixed-top mai-top-header">
@@ -214,11 +216,16 @@
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.print.js" type="text/javascript"></script>
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.colVis.js" type="text/javascript"></script>
     <script src="assets/lib/datatables/plugins/buttons/js/buttons.bootstrap.js" type="text/javascript"></script>
+
+    <script src="assets/lib/raphael/raphael-min.js" type="text/javascript"></script>
+    <script src="assets/lib/morrisjs/morris.min.js" type="text/javascript"></script>
+
     <script type="text/javascript">
     $(document).ready(function(){
 		/*initialize the javascript*/
       	App.init();
-      	App.dashboard();
+      	//App.dashboard();
+        App.chartsMorris();
         /*localStorage.setItem('page', 'dashboard');*/
 	})
 	var setPage = function(stage){
@@ -285,7 +292,7 @@
     </script>
     <script type="text/javascript">
 	$(document).ready(function(){
-		App.livePreview();
+		//App.livePreview();
 	});
 	</script>
 </body>
