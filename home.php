@@ -225,20 +225,27 @@
 		
         /******starting chart********/
         function loadChart() {
-            var linea1="#000000", linea2="#ffffcc"; //colores de linea
+            var linea1="#000000", linea2="#ffcccc"; //colores de linea
             new Morris.Line( {
-                element: "line-chart", data: dataInfo, xkey: "periodo", ykeys: ["facturas", "boletas"], labels: ["Factura", "Boleta"], lineColors: [linea1, linea2]
+                element: "line-chart",
+                data: dataInfo,
+                xkey: "periodo",
+                ykeys: ["facturas", "boletas"],
+                labels: ["Factura", "Boleta"],
+                lineColors: [linea1, linea2],
+                xLabelFormat: function (x) { return months[x.getMonth()]; }
             });
         }
         
+        var months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'];
         var dataInfo=[
-            { periodo: "Enero", facturas: 400, boletas: 550 },
-            { periodo: "Febrero", facturas: 450, boletas: 400 },
-            { periodo: "Marzo", facturas: 350, boletas: 550 },
-            { periodo: "Abril", facturas: 500, boletas: 700 },
-            { periodo: "Mayo", facturas: 250, boletas: 380 }
+            { periodo: "2017-01", facturas: 400, boletas: 550 },
+            { periodo: "2017-02", facturas: 450, boletas: 400 },
+            { periodo: "2017-03", facturas: 350, boletas: 550 },
+            { periodo: "2017-04", facturas: 500, boletas: 700 },
+            { periodo: "2017-05", facturas: 250, boletas: 380 }
         ];
-        loadChart()
+        loadChart();
         //------------------> End chart
 
 	})
