@@ -222,11 +222,25 @@
 
     <script type="text/javascript">
     $(document).ready(function(){
-		/*initialize the javascript*/
-      	App.init();
-      	//App.dashboard();
-        App.chartsMorris();
-        /*localStorage.setItem('page', 'dashboard');*/
+		
+        /******starting chart********/
+        function loadChart() {
+            var linea1="#000000", linea2="#ffffcc"; //colores de linea
+            new Morris.Line( {
+                element: "line-chart", data: dataInfo, xkey: "periodo", ykeys: ["facturas", "boletas"], labels: ["Factura", "Boleta"], lineColors: [linea1, linea2]
+            });
+        }
+        
+        var dataInfo=[
+            { periodo: "Enero", facturas: 400, boletas: 550 },
+            { periodo: "Febrero", facturas: 450, boletas: 400 },
+            { periodo: "Marzo", facturas: 350, boletas: 550 },
+            { periodo: "Abril", facturas: 500, boletas: 700 },
+            { periodo: "Mayo", facturas: 250, boletas: 380 }
+        ];
+        loadChart()
+        //------------------> End chart
+
 	})
 	var setPage = function(stage){
 		console.log(stage);
@@ -290,10 +304,7 @@
     localStorage.setItem('page', 'dashboard');
     loadPage();
     </script>
-    <script type="text/javascript">
-	$(document).ready(function(){
-		//App.livePreview();
-	});
-	</script>
+    
+
 </body>
 </html>
